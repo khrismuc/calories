@@ -22,10 +22,13 @@ export default class Bars extends Component {
 
     render = () => {
 
+        var sum = Data.statNames.map(i => 0);
+
         const stats = Data.statNames.map((name, i) => {
             const goal = this.goals[i];
             return Data.ingredients.map((ing, j) => {
                 const w = ing.stats[i] * this.props.amounts[j] / goal;
+                sum[i] += w * goal;
                 return (<Bar
                     key={i * Data.statNames.length + j}
                     color={Colors[j] || "grey"}
@@ -38,7 +41,7 @@ export default class Bars extends Component {
             <table id="bars">
                 <tbody>
                     {Data.statNames.map((name, i) => <tr key={i}>
-                        <td>{name}:</td>
+                        <td>{name} ({Math.round(sum[i])}/{this.goals[i]}):</td>
                         <td>
                             <div className="bargroup">{stats[i]}</div>
                         </td>
