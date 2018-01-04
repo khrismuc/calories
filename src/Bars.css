@@ -1,0 +1,25 @@
+#bars {
+    width: 100%;
+    border-spacing: 0 10px
+}
+
+#bars td:first-child {
+    text-align: right
+}
+
+#bars td:nth-child(2) {
+    background-color: #eee;
+    width: 80%;
+    text-align: left
+}
+
+#bars .bargroup {    
+    width: 100%;
+    overflow: hidden
+}
+
+#bars .bar {
+    float: left;
+    display: block;
+    height: 20px
+}
