@@ -4,9 +4,6 @@ import { Slider } from 'material-ui';
 import './Ing.css';
 
 export default class Ing extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     handleChange = (e, newVal) => {
         this.props.updateApp(this.props.id, newVal);
