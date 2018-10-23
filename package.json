@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "http://khris.ddns.net/calories",
   "dependencies": {
-    "material-ui": "^0.20.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "material-ui": "^0.20.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-scripts": "1.0.17"
   },
   "scripts": {
@@ -16,7 +16,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "eslint": "^4.14.0",
-    "eslint-plugin-react": "^7.5.1"
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.11.1"
   }
 }
